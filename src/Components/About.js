@@ -20,10 +20,11 @@ const About = () => {
           <div className="about--body--container">
             <div className="about--item--container">
                 Hi I'm Jerome,<br></br><br></br>
-                Currently at the WildCodeSchool Paris learning JavaScript REACT & NODE,<br></br><br></br>
-                I am looking for a 6 month internship from February 2021 onwards,<br></br><br></br>
-                I am autonomous at work & have a good spirit when working as a team,<br></br>
-                I will be able to adapt to your projects and give the maximum of myself!<br></br><br></br>
+                Currently at the <b>WildCodeSchool</b> Paris learning<br></br>
+                <b>JavaScript REACT & NODE</b>,<br></br><br></br>
+                I am looking for a <b>6 months internship from February 2021 onwards</b>,<br></br><br></br>
+                I am <b>autonomous</b> at work & have a <b>good spirit when working as a team</b>,<br></br>
+                I will be able to <b>adapt</b> to your projects and <b>give the maximum of myself</b>!<br></br><br></br>
                 I love drawing, listening to music, and good coffee!<br></br>
                 Always was interested in art and design, I good sense of detail
             </div>

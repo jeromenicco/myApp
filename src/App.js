@@ -37,19 +37,19 @@ class App extends Component {
       <TransitionGroup>
         <CSSTransition 
           key={currentKey}
-          classNames="fade"
-          timeout={350}
+          classNames="slide"
+          timeout={timeout}
           mountOnEnter={false}
           unmountOnExit={true}
           > 
-          {/* <div className={this.getPathDepth(location) - this.state.prevDepth >= 0 ? "right" : "left"}> */}
+          <div className={this.getPathDepth(location) - this.state.prevDepth >= 0 ? "right" : "left"}>
               <Switch location={location}>
                 <Route path="/" exact component={About}/>
                 <Route path="/about" exact component={About} />
                 <Route path="/work" exact component={Work} />
                 <Route path="/contact" exact component={Contact} />
               </Switch>
-          {/* </div> */}
+          </div>
         </CSSTransition>
       </TransitionGroup>
 

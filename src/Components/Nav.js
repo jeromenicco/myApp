@@ -10,16 +10,21 @@ const Nav = () => {
     const randomHexColor = () => {
         const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
         setColor(randomColor);
+        let text = document.querySelectorAll('p')
+        document.body.style.color = text
     }
 
     const randomHexBackground = () => {
         const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
         setBackground(randomColor);
+        document.body.style.background = background
     }
 
+    
 
     // document.body.style.color = color
-    document.body.style.background = background
+    
+    
 
     return (
         <div className='nav-container'>
@@ -27,20 +32,20 @@ const Nav = () => {
             <Link to="/">
                 <button className="main--title">Jerome Nicco</button>
             </Link>
-                <button className="--button" type="button" onClick={randomHexBackground}>Background</button>
+                <button className="--button" type="button" onClick={randomHexColor}>Background</button>
             </div>
 
 
             <div className='row2'>
 
-                <Link to="/about" activeClassName="nav--button__active">
-                    <button className="nav--button">About</button>
+                <Link to="/about" activeClassName="nav--links__active">
+                    <p className="nav--links">About</p>
                 </Link>
-                <Link to="/work" activeClassName="nav--button__active">
-                    <button className="nav--button">Work</button>
+                <Link to="/work" activeClassName="nav--links__active">
+                    <p className="nav--links">Work</p>
                 </Link>
-                <Link to="/contact" activeClassName="nav--button__active">
-                    <button className="nav--button">Contact</button>
+                <Link to="/contact" activeClassName="nav--links__active">
+                    <p className="nav--links">Contact</p>
                 </Link>
 
             </div>
