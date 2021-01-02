@@ -1,0 +1,43 @@
+
+.contact--title {
+  margin-top: 1vw;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 6vw;
+  letter-spacing: -5px;
+}
+
+.contact--container {
+  margin-left: 1.5vw;
+  width: auto;
+}
+
+.contact--ticker {
+  padding-right: 0.5em;
+}
+
+
+.contact--body--container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact--item--container {
+  top: 0;
+  bottom: 0;
+  padding-top: 10vw;
+  position: absolute;
+  width: 40vw;
+  height: auto;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 2.5em;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+

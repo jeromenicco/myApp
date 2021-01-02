@@ -1,0 +1,24 @@
+.card--container {
+  display: flex;
+  padding-bottom: 1em;
+}
+
+.inside--flex {
+  padding-left: 0.5em;
+}
+
+.img--container {
+  width: 24vw;
+  height: 15vw;
+  border: 1px solid black;
+  min-width: 24vw;
+}
+
+.card--title {
+  font-size: 2vw;
+}
+
+.card--resume {
+  font-size: 0.5em;
+}
+
