@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { NavLink as Link } from "react-router-dom";
+import { menuItems } from '../App'
+
 
 import "./Nav.css";
 
@@ -20,11 +22,11 @@ const Nav = () => {
         document.body.style.background = background
     }
 
-    
+
 
     // document.body.style.color = color
-    
-    
+
+
 
     return (
         <div className='nav-container'>
@@ -37,17 +39,11 @@ const Nav = () => {
 
 
             <div className='row2'>
-
-                <Link to="/about" activeClassName="nav--links__active">
-                    <p className="nav--links">About</p>
-                </Link>
-                <Link to="/work" activeClassName="nav--links__active">
-                    <p className="nav--links">Work</p>
-                </Link>
-                <Link to="/contact" activeClassName="nav--links__active">
-                    <p className="nav--links">Contact</p>
-                </Link>
-
+                {menuItems.map((item, index) =>
+                    <Link exact to={{pathname: item.path, index }} key={item.path} activeClassName="nav--links__active">
+                        <p className="nav--links">{item.label}</p>
+                    </Link>
+                )}
             </div>
 
 

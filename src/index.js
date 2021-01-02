@@ -4,12 +4,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { LastLocationProvider } from 'react-router-last-location';
 
 ReactDOM.render(
   <Router>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <LastLocationProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </LastLocationProvider>
   </Router>,
   document.getElementById('root')
 );
