@@ -1,14 +1,12 @@
 
-.profileCard--title {
-  margin-top: 1vw;
+.profile-card-title {
   font-style: italic;
   font-weight: lighter;
   font-size: 6vw;
-  letter-spacing: -5px;
 }
 
 
-.title--ticker--wrap {
+.title-ticker-wrap {
   margin-left: 1.5vw;
   max-width: fit-content;
   display: flex;
@@ -16,20 +14,18 @@
 }
 
 
-.text--ticker {
+.text-ticker {
   font-size: 1.5vw;
 }
 
-.about--body--container {
+.about-body-container {
   display: flex;
   justify-content: center;
 }
 
-.about--item--container {
+.about-item-container {
   top: 0;
   bottom: 0;
-  padding-top: 10vw;
-  padding-bottom: 10vw;
   margin-left: 10vw;
   position: absolute;
   width: 50%;
@@ -38,11 +34,32 @@
   overflow-x: hidden;
   overflow-y: scroll;
   font-size: 3em;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  padding: 11vw 5vw;
+  
+}
+
+.about-item-container-dark {
+  top: 0;
+  bottom: 0;
+  margin-left: 10vw;
+  position: absolute;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 3em;
+  border-right: 1px solid #353C45;
+  border-left: 1px solid #353C45;
+  padding: 11vw 5vw;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
+
 
 
 

@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ContextState } from '../ContextState'
 
 import "./WorkCard.css"
 
-function WorkCard ({title, resume}) {
+function WorkCard ({title, resume, url, image}) {
+  const [ click ] = useContext(ContextState)
   return (
-    <div className="card--container">
-      <div className="img--container" />
-      <div className="inside--flex">
-        <h4 className="card--title">{title}</h4>
-        <p className="card--resume">{resume}</p>
+    <div className="card-container">
+      <a href={url}>
+        <img src={image} alt={title} className="img-container"/>
+      </a>
+      <div className="inside-flex">
+        <h4 className="card-title">{title}</h4>
+        <p className={!click ? 'card-resume-dark' : 'card-resume'}>{resume}</p>
       </div>
     </div>
   )

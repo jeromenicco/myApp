@@ -1,22 +1,35 @@
-import React from 'react'
+import React , { useContext } from 'react'
+import { ContextState } from '../ContextState'
 
 import "./Contact.css";
 
+const contactLinks = [
+  'https://www.linkedin.com/in/jerome-nicco/', 
+  'https://github.com/jeromenicco'
+] 
+
 const Contact = () => {
+  const [ click ] = useContext(ContextState)
   return (
-    <div className="contact--container page">
-        <h3 className='contact--title'>Contact</h3>
-          <div className="contact--body--container">
-            <div className="contact--item--container">
+    <div className="contact-container page">
+        <h3 className='contact-title'>Contact</h3>
+          <div className="contact-body-container">
+            <div className={!click ? 'contact-item-container-dark' : 'contact-item-container'}>
               <ul>
                 <li>
-                  <p>jeromenicco36@gmail.com</p>
+                  jeromenicco36@gmail.com
                 </li>
                 <li>
-                  <p>Linkedln : @/jerome-nicco</p>
+                  <p>Linkedln :</p>
+                  <a href={contactLinks[0]} target='_blank' rel='noreferrer'>
+                      @/jerome-nicco
+                  </a>
                 </li>
                 <li>
-                  <p>Github : jeromenicco</p>
+                  <p>Github :</p>
+                  
+                    <a href={contactLinks[1]} target='_blank' rel='noreferrer'>jeromenicco</a>
+                  
                 </li>
               </ul>
             </div>

@@ -1,5 +1,5 @@
 
-.contact--title {
+.contact-title {
   margin-top: 1vw;
   font-style: italic;
   font-weight: lighter;
@@ -7,25 +7,25 @@
   letter-spacing: -5px;
 }
 
-.contact--container {
+.contact-container {
   margin-left: 1.5vw;
   width: auto;
 }
 
-.contact--ticker {
+.contact-ticker {
   padding-right: 0.5em;
 }
 
 
-.contact--body--container {
+.contact-body-container {
   display: flex;
   justify-content: center;
 }
 
-.contact--item--container {
+.contact-item-container {
   top: 0;
   bottom: 0;
-  padding-top: 10vw;
+  padding-top: 15vw;
   position: absolute;
   width: 40vw;
   height: auto;
@@ -33,7 +33,59 @@
   overflow-x: hidden;
   overflow-y: scroll;
   font-size: 2.5em;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  padding: 10vw 5vw;
+  list-style: none;
 }
+
+.contact-item-container a {
+  margin-left: 10px;
+  font-size: 1.5em;
+  transition: 0.3s ease-in;
+}
+
+.contact-item-container a:hover {
+  font-style: italic;
+}
+
+.contact-item-container-dark {
+  top: 0;
+  bottom: 0;
+  padding-top: 15vw;
+  position: absolute;
+  width: 40vw;
+  height: auto;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 2.5em;
+  border-right: 1px solid #353C45;
+  border-left: 1px solid #353C45;
+  padding: 10vw 5vw;
+  color: #F7F7F7;
+}
+
+.contact-item-container-dark a {
+  color: #61DAFB;
+  margin-left: 10px;
+  font-size: 1.5em;
+  transition: 0.3s ease-in;
+}
+
+.contact-item-container-dark a:hover {
+  font-style: italic;
+}
+
+.contact-body-container li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+
+}
+
+
 
 ::-webkit-scrollbar {
   display: none;

@@ -1,0 +1,156 @@
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  
+  /*   ABOUT   */
+  .main-title {
+    font-size: 2rem;
+  }
+  
+  .nav-links-dark {
+    font-size: 6vw;
+  }
+
+  .nav-links {
+    font-size: 6vw;
+  }
+
+  .row2 {
+    justify-content: center;
+  }
+
+  .row2-dark {
+    justify-content: center;
+  }
+
+  .page {
+    display: flex;
+    height: 100vw;
+  }
+
+  .slide-info-container {
+    padding-top: 4em;
+  }
+  .left-slide-items {
+    font-size: 1rem;
+  }
+
+  .about-body-container {
+    height: fit-content;
+  }
+
+  .profile-card-title {
+    padding-top: 0.5rem;
+  }
+
+  .about-item-container-dark {
+    position: initial;
+    font-size: 6vw;
+    justify-content: end;
+    width: fit-content;
+    border-right: none;
+    min-width: 20vw;
+    height: 130vw;
+    padding-top: 0.5rem;
+  }
+
+  .about-item-container {
+    position: initial;
+    font-size: 6vw;
+    justify-content: end;
+    width: fit-content;
+    border-right: none;
+    min-width: 20vw;
+    height: 130vw;
+    padding-top: 0.5rem;
+  }
+
+  /*   WORK    */
+
+  .projects-card-title {
+    letter-spacing: 0px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-resume {
+    font-size: 1rem;
+  }
+
+  .card-resume-dark {
+    font-size: 1rem;
+  }
+
+  .inside-flex {
+    padding-left: 0;
+  }
+
+  .work-item-container-dark {
+    position: initial;
+    font-size: 6vw;
+    justify-content: end;
+    width: fit-content;
+    border-right: none;
+    height: 130vw;
+    padding-top: 0.5rem;
+  }
+
+  .work-item-container {
+    position: initial;
+    font-size: 6vw;
+    justify-content: end;
+    width: fit-content;
+    border-right: none;
+    height: 130vw;
+    padding-top: 0.5rem;
+  }
+  
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 5.5em;
+    text-align: left;
+  }
+
+  /* CONTACT */
+
+  .contact-title {
+    display: none;
+  }
+
+  .contact-container {
+    justify-content: center;
+    border: none;
+    height: 70%;
+  }
+  
+  .contact-item-container-dark {
+    position: initial;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #353C45;
+  }
+
+  .contact-item-container {
+    position: initial;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #353C45;
+  }
+  
+  .contact-body-container li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+

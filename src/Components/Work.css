@@ -1,12 +1,12 @@
 
 
-.projects--container {
+.projects-container {
   
   margin-left: 1.5vw;
   width: 16vw;
 }
 
-.projectsCard--title {
+.projects-card-title {
   margin-top: 1vw;
   margin-left: 1.5vw;
   font-style: italic;
@@ -15,12 +15,12 @@
   letter-spacing: -5px;
 }
 
-.work--body--container {
+.work-body-container {
   display: flex;
   justify-content: center;
 }
 
-.work--item--container {
+.work-item-container {
   display: flex;
   flex-direction: column;
   top: 0;
@@ -34,6 +34,28 @@
   overflow-x: hidden;
   overflow-y: scroll;
   font-size: 4em;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  padding: 10vw 5vw;
+}
+
+.work-item-container-dark {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  padding-top: 10vw;
+  position: absolute;
+  width: 50%;
+  margin-left: 10vw;
+  height: auto;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 4em;
+  border-right: 1px solid #353C45;
+  border-left: 1px solid #353C45;
+  padding: 10vw 5vw;
 }
 
 ::-webkit-scrollbar {
