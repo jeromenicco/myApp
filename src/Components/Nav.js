@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { NavLink as Link } from "react-router-dom";
 import { menuItems } from '../App'
 import { ContextState } from "../ContextState";
