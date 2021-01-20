@@ -7,7 +7,7 @@ function WorkCard ({title, resume, url, image}) {
   const [ click ] = useContext(ContextState)
   return (
     <div className="card-container">
-      <a href={url}>
+      <a href={url} target='_blank' rel='noreferrer'>
         <img src={image} alt={title} className="img-container"/>
       </a>
       <div className="inside-flex">
