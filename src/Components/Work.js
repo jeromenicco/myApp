@@ -7,7 +7,7 @@ import renaissance from '../assets/renaissance-image.png'
 
 import "./Work.css";
 import { ContextState } from "../ContextState";
-import SideInfo from "./SideInfo";
+// import SideInfo from "./SideInfo";
 
 const Work = () => {
   const [ click ] = useContext(ContextState)
