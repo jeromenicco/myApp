@@ -1,4 +1,4 @@
-import SlideInfo from './SlideInfo';
+import SideInfo from './SideInfo';
 import React, { useContext } from 'react'
 import { ContextState } from '../ContextState'
 // import Tickers from "react-ticker";
@@ -13,7 +13,7 @@ const About = () => {
         <div className="profile-title-container page">
           <div className="title-ticker-wrap">
             <h3 className='profile-card-title'>Profile</h3>
-            <SlideInfo />
+            <SideInfo props={ ['JavaScript', 'React', 'Node', 'MySql', 'GitHub'] }/>
             {/* <Ticker className="profile-ticker" speed={3} mode="chain">
             {() => (
                 <p className="text-ticker" style={{height: "3em"}}>JS++REACT++NODE++</p>

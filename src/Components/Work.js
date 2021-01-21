@@ -7,12 +7,14 @@ import renaissance from '../assets/renaissance-image.png'
 
 import "./Work.css";
 import { ContextState } from "../ContextState";
+import SideInfo from "./SideInfo";
 
 const Work = () => {
   const [ click ] = useContext(ContextState)
   return (
       <div className="projectsCard-container page">
           <h3 className='projects-card-title'>Projects</h3>
+          {/* <SideInfo /> */}
             <div className="work-body-container">
               <div className={!click ? 'work-item-container-dark' : 'work-item-container'}>
                 <WorkCard 
