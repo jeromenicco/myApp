@@ -65,9 +65,7 @@ const App = () => {
   return (
     <ContextClick.Provider value={[click, setClick]}>
       <div className={!click ? 'app-dark' : 'app'}>
-        
          <Nav navbarClasses={navbarClasses} scrolled={scrolled} handleScroll={handleScroll} />
-      
         <TransitionGroup>
           <CSSTransition
             key={location.pathname}
@@ -76,16 +74,13 @@ const App = () => {
             mountOnEnter={false}
             unmountOnExit={true}
             >
-
             <div className="fade">
                 <Switch location={location}>
-        
                     {menuItems.map((item, i) =>
                       <Route exact path={item.path} component={item.component} key={item.path}/>
                     )}
                 </Switch>
             </div>
-
           </CSSTransition>
         </TransitionGroup>
       </div>

@@ -74,6 +74,7 @@
     border-right: none;
     min-width: 20vw;
     /* height: 130vw; */
+    padding-top: 0.5rem;
 
   }
 
@@ -84,7 +85,7 @@
     border-right: none;
     min-width: 20vw;
     /* height: 130vw; */
-    padding-top: 0.5rem;
+    padding-top: 0.5rem
   }
 
   /*   WORK    */
@@ -112,10 +113,9 @@
 
   .work-item-container-dark {
     position: initial;
-    font-size: 6vw;
+    font-size: 2em;
     justify-content: end;
     border-right: none;
-    height: 130vw;
     padding-top: 0.5rem;
     border: none;
     margin: 0;
@@ -125,10 +125,9 @@
 
   .work-item-container {
     position: initial;
-    font-size: 6vw;
+    font-size: 2em;
     justify-content: end;
     border-right: none;
-    height: 130vw;
     padding-top: 0.5rem;
     border: none;
     margin: 0;
