@@ -1,5 +1,5 @@
 import React , { useContext } from 'react'
-import { ContextState } from '../ContextState'
+import { ContextClick } from '../Context'
 
 import "./Contact.css";
 
@@ -9,7 +9,7 @@ const contactLinks = [
 ] 
 
 const Contact = () => {
-  const [ click ] = useContext(ContextState)
+  const [ click ] = useContext(ContextClick)
   return (
     <div className="contact-container page">
         <h3 className='contact-title'>Contact</h3>

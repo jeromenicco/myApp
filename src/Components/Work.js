@@ -6,11 +6,11 @@ import heroesImage from '../assets/heroes-image.png'
 import renaissance from '../assets/renaissance-image.png'
 
 import "./Work.css";
-import { ContextState } from "../ContextState";
+import { ContextClick } from "../Context";
 // import SideInfo from "./SideInfo";
 
 const Work = () => {
-  const [ click ] = useContext(ContextState)
+  const [ click ] = useContext(ContextClick)
   return (
       <div className="projectsCard-container page">
           <h3 className='projects-card-title'>Projects</h3>
@@ -24,7 +24,7 @@ const Work = () => {
                   image={ichinisanImage}
                   />
                 <WorkCard 
-                  title="CITIZEN&court"
+                  title="citizen&court"
                   resume="Hackaton 24h React / PHP Back End"
                   url={'http://www.citizen-court.tech/painting'}
                   image={renaissance}

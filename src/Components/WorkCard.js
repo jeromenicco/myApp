@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import { ContextState } from '../ContextState'
+import { ContextClick } from '../Context'
 
 import "./WorkCard.css"
 
 function WorkCard ({title, resume, url, image}) {
-  const [ click ] = useContext(ContextState)
+  const [ click ] = useContext(ContextClick)
   return (
     <div className="card-container">
       <a href={url} target='_blank' rel='noreferrer'>

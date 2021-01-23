@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Switch, Route, withRouter, useLocation } from "react-router-dom"
 import { TransitionGroup, CSSTransition } from "react-transition-group"
 
@@ -9,7 +9,8 @@ import Contact from "./Components/Contact";
 
 import './App.scss';
 import './responsive.css'
-import { ContextState } from "./ContextState";
+import { ContextClick } from "./Context";
+
 
 export const menuItems = [
   { path: '/', component: About, label: 'About' },
@@ -23,23 +24,50 @@ const App = () => {
   const location = useLocation()
   const [ click, setClick ] = useState(false)
 
-  
-    if (!click) {
-        document.body.style.color = '#61DAFB'
-        document.body.style.background = '#202429'
-    } else {
-        document.body.style.color = '#202429'
-        document.body.style.background = '#F7F7F7'
-    }
+  if (!click) {
+      document.body.style.color = '#61DAFB'
+      document.body.style.background = '#202429'
+  } else {
+      document.body.style.color = '#202429'
+      document.body.style.background = '#F7F7F7'
+  }
+
+  const [ scrolled, setScrolled ] = useState(false)
+
+  const handleScroll=() => {
+      const offset = window.scrollY
+
+
+      console.log(offset);
+
+
+      if (offset >= 43) {
+        setScrolled(true)
+      }
+      else {
+        setScrolled(false)
+      }
+    } 
+      window.addEventListener('scroll',handleScroll)
+      let navbarClasses = ['navbar'];
+          if (scrolled && !click) {
+              navbarClasses.push('scrolled-dark');
+          } else if (scrolled && click) {
+              navbarClasses.push('scrolled');
+          }
+
+
 
   
 
-  console.log(ContextState.Provider);
+  // console.log(ContextClick.Provider);
  
   return (
-    <ContextState.Provider value={[click, setClick]}>
+    <ContextClick.Provider value={[click, setClick]}>
       <div className={!click ? 'app-dark' : 'app'}>
-        <Nav />
+        
+         <Nav navbarClasses={navbarClasses} scrolled={scrolled} />
+      
         <TransitionGroup>
           <CSSTransition
             key={location.pathname}
@@ -49,10 +77,11 @@ const App = () => {
             unmountOnExit={true}
             >
 
-            <div id="slider" className="fade">
+            <div className="fade">
                 <Switch location={location}>
+        
                     {menuItems.map((item, i) =>
-                      <Route exact path={item.path} component={item.component} key={item.path} />
+                      <Route exact path={item.path} component={item.component} key={item.path}/>
                     )}
                 </Switch>
             </div>
@@ -60,7 +89,7 @@ const App = () => {
           </CSSTransition>
         </TransitionGroup>
       </div>
-    </ContextState.Provider>
+    </ContextClick.Provider>
   )
 }
 

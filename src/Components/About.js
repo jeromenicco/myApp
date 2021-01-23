@@ -1,19 +1,20 @@
 import SideInfo from './SideInfo';
 import React, { useContext } from 'react'
-import { ContextState } from '../ContextState'
+import { ContextClick } from '../Context'
 // import Tickers from "react-ticker";
 
 import './About.css'
 
 const About = () => {
   
-  const [ click ] = useContext(ContextState)
+  const [ click ] = useContext(ContextClick)
 
   return (
         <div className="profile-title-container page">
           <div className="title-ticker-wrap">
             <h3 className='profile-card-title'>Profile</h3>
             <SideInfo props={ ['JavaScript', 'React', 'Node', 'MySql', 'GitHub'] }/>
+            <SideInfo props={ ['']} />
             {/* <Ticker className="profile-ticker" speed={3} mode="chain">
             {() => (
                 <p className="text-ticker" style={{height: "3em"}}>JS++REACT++NODE++</p>
