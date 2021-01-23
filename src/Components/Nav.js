@@ -7,8 +7,10 @@ import "./Nav.css";
 
         
 
-const Nav = ({ navbarClasses, scrolled }) => {
+const Nav = ({ navbarClasses, scrolled, handleScroll }) => {
     const [ click, setClick ] = useContext(ContextClick)
+
+    handleScroll()
 
     return (
         <div className='nav-container'>

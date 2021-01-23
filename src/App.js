@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Switch, Route, withRouter, useLocation } from "react-router-dom"
 import { TransitionGroup, CSSTransition } from "react-transition-group"
 
@@ -41,7 +41,7 @@ const App = () => {
       console.log(offset);
 
 
-      if (offset >= 43) {
+      if (offset >= 45) {
         setScrolled(true)
       }
       else {
@@ -66,7 +66,7 @@ const App = () => {
     <ContextClick.Provider value={[click, setClick]}>
       <div className={!click ? 'app-dark' : 'app'}>
         
-         <Nav navbarClasses={navbarClasses} scrolled={scrolled} />
+         <Nav navbarClasses={navbarClasses} scrolled={scrolled} handleScroll={handleScroll} />
       
         <TransitionGroup>
           <CSSTransition
