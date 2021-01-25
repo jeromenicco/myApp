@@ -31,8 +31,8 @@ const Contact = () => {
                   <p>Github :</p>
                     <a href={contactLinks[1]} target='_blank' rel='noreferrer'>jeromenicco</a>
                 </li>
-                <li className='send-to-container'>
-                  <p className='send-to' onClick={()=> setShowForm(!showForm)}>send email to <em>jeromenicco36@gmail.com</em></p>
+                <li className={!click ? 'send-to-container-dark' : 'send-to-container'}>
+                  <p className={!click ? 'send-to-dark' : 'send-to'} onClick={()=> setShowForm(!showForm)}>send email to <em>jeromenicco36@gmail.com</em></p>
                   
                 </li>
               </ul>

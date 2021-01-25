@@ -115,21 +115,36 @@
   flex-direction: column;
 }
 
+.send-to-container-dark {
+  display: flex;
+  flex-direction: column;
+}
+
 .send-to {
   padding-top: 10%;
   text-align: center;
-
+}
+.send-to-dark {
+  padding-top: 10%;
+  text-align: center;
 }
 
-.send-to em {
+.send-to em  {
+  font-size: 1.5em;
+  cursor: pointer;
+  font-style: initial;
+}
+.send-to-dark em {
   font-size: 1.5em;
   cursor: pointer;
   font-style: initial;
 }
 
 .send-to em:hover {
+  font-style: italic;
+}
+.send-to-dark em:hover {
   color: #61DAFB;
   font-style: italic;
-
 }
 
