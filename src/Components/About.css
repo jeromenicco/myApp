@@ -1,8 +1,15 @@
 
+.profile-card-title-dark {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 5rem;
+  color: lightgrey;
+}
 .profile-card-title {
   font-style: italic;
   font-weight: lighter;
-  font-size: 6vw;
+  font-size: 5rem;
+  color: black;
 }
 
 
@@ -37,9 +44,6 @@
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
   padding: 11vw 5vw;
-
-
-  
 }
 
 .about-item-container-dark {
@@ -56,6 +60,11 @@
   border-right: 1px solid #353C45;
   border-left: 1px solid #353C45;
   padding: 11vw 5vw;
+  color: lightgrey;
+}
+
+.about-item-container-dark em {
+  color: #61DAFB;
 }
 
 ::-webkit-scrollbar {

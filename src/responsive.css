@@ -29,8 +29,6 @@
   .nav-div-scrolled {
     height: 4em;
   }
-  
-  /*   ABOUT   */
   .main-title {
     font-size: 2rem;
   }
@@ -53,6 +51,8 @@
   .row2-dark {
     justify-content: center;
   }
+  
+  /*   ABOUT   */
 
   .page {
     display: flex;
@@ -71,7 +71,16 @@
 
   .profile-card-title {
     padding-top: 0.5rem;
+    font-size: 1.5em;
   }
+
+  .profile-card-title-dark {
+    padding-top: 0.5rem;
+    font-size: 1.5em;
+  }
+  
+
+ 
 
   .about-item-container-dark {
     position: initial;
@@ -160,6 +169,14 @@
     justify-content: center;
     border: none;
     height: 70%;
+    margin: 0;
+  }
+
+  .contact-container-dark {
+    justify-content: center;
+    border: none;
+    height: 70%;
+    margin: 0;
   }
   
   .contact-item-container-dark {
@@ -167,7 +184,8 @@
     font-size: 1rem;
     width: 100%;
     border: none;
-    border-bottom: 1px solid lightgrey;
+    margin: 0;
+    border-bottom: 1px solid #353C45;
   }
 
   .contact-item-container {
@@ -178,12 +196,43 @@
     border-bottom: 1px solid lightgrey;
   }
   
+  .contact-body-container {
+    display: flex;
+    text-align: center;
+    width: 95%;
+  }
+  .contact-body-container-dark {
+    display: flex;
+    text-align: center;
+    width: 95%;
+  }
+
+
   .contact-body-container li {
     list-style: none;
     display: flex;
     flex-direction: column;
   }
 
+  .contact-body-container-dark li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .send-to {
+    width: auto;
+  }
+
+  .send-to em {
+    font-size: 1.5em;
+  }
+
+  /* CLOCK*/
+ .clock {
+   display: none;
+ }
 
 }
 

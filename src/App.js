@@ -15,8 +15,10 @@ import { ContextClick } from "./Context";
 export const menuItems = [
   { path: '/', component: About, label: 'About' },
   { path: '/work', component: Work, label: 'Work' },
-  { path: '/contact', component: Contact, label: 'Contact' }
+  { path: '/contact', component: Contact, label: 'Contact' },
 ]
+
+
 
 
 const App = () => {
@@ -37,9 +39,7 @@ const App = () => {
   const handleScroll=() => {
       const offset = window.scrollY
 
-
       console.log(offset);
-
 
       if (offset >= 45) {
         setScrolled(true)
@@ -48,6 +48,7 @@ const App = () => {
         setScrolled(false)
       }
     } 
+
       window.addEventListener('scroll',handleScroll)
       let navbarClasses = ['navbar'];
           if (scrolled && !click) {
@@ -55,10 +56,6 @@ const App = () => {
           } else if (scrolled && click) {
               navbarClasses.push('scrolled');
           }
-
-
-
-  
 
   // console.log(ContextClick.Provider);
  

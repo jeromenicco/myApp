@@ -1,10 +1,10 @@
 
 .contact-title {
-  margin-top: 1vw;
   font-style: italic;
   font-weight: lighter;
-  font-size: 6vw;
-  letter-spacing: -5px;
+  font-size: 5rem;
+  color: lightgrey;
+  margin-left: 30px;
 }
 
 .contact-container {
@@ -20,6 +20,7 @@
 .contact-body-container {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .contact-item-container {
@@ -38,6 +39,7 @@
   padding: 10vw 5vw;
   list-style: none;
 }
+
 
 .contact-item-container a {
   margin-left: 10px;
@@ -82,7 +84,13 @@
   display: flex;
   align-items: center;
   padding-bottom: 1em;
+}
 
+.contact-body-container-dark li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
 }
 
 
@@ -91,5 +99,25 @@
   display: none;
 }
 
+.send-to-container {
+  display: flex;
+  flex-direction: column;
+}
 
+.send-to {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.send-to em {
+  font-size: 4rem;
+  cursor: pointer;
+  font-style: initial;
+}
+
+.send-to em:hover {
+  color: #61DAFB;
+  font-style: italic;
+
+}
 
