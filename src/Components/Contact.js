@@ -33,6 +33,7 @@ const Contact = () => {
                 </li>
                 <li className='send-to-container'>
                   <p className='send-to' onClick={()=> setShowForm(!showForm)}>send email to <em>jeromenicco36@gmail.com</em></p>
+                  
                 </li>
               </ul>
 
