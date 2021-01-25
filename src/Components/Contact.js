@@ -1,6 +1,5 @@
 import React , { useState, useContext } from 'react'
 import { ContextClick } from '../Context'
-import EmailMe from './EmailMe.js'
 
 import "./Contact.css";
 
@@ -34,7 +33,6 @@ const Contact = () => {
                 </li>
                 <li className='send-to-container'>
                   <p className='send-to' onClick={()=> setShowForm(!showForm)}>send email to <em>jeromenicco36@gmail.com</em></p>
-                  {/* {showForm && <EmailMe state={[showForm, setShowForm]}/>} */}
                 </li>
               </ul>
 

@@ -27,6 +27,8 @@ const Clock = () => {
 
   setInterval(setDate, 1000)
 
+  
+
   return (
     <div className='clock'>
       <div className='clock-face'>
