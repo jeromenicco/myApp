@@ -1,12 +1,12 @@
-import React, { useContext }from "react";
-import WorkCard from "./WorkCard";
+import React, { useContext }from "react"
+import WorkCard from "./WorkCard"
 import bandgangsImage  from '../assets/bandgangs-image.png'
 import ichinisanImage from '../assets/ichinisan-image.png'
 import heroesImage from '../assets/heroes-image.png'
 import renaissance from '../assets/renaissance-image.png'
+import { ContextClick } from "../Context"
 
-import "./Work.css";
-import { ContextClick } from "../Context";
+import "./Work.css"
 // import SideInfo from "./SideInfo";
 
 const Work = () => {
@@ -14,7 +14,6 @@ const Work = () => {
   return (
       <div className="projectsCard-container page">
           <h3 className={!click ? 'projects-card-title-dark' : 'projects-card-title'}>Projects</h3>
-          {/* <SideInfo /> */}
             <div className="work-body-container">
               <div className={!click ? 'work-item-container-dark' : 'work-item-container'}>
                 <WorkCard 
