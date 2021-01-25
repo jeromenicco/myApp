@@ -17,7 +17,7 @@ const Contact = () => {
 
   return (
     <div className={!click ? 'contact-container-dark page' : 'contact-container page'}>
-        <h3 className='contact-title'>Contact</h3>
+        <h3 className={!click ? 'contact-title-dark' :  'contact-title'}>Contact</h3>
           <div className='contact-body-container'>
             <div className={!click ? 'contact-item-container-dark' : 'contact-item-container'}>
               <ul>

@@ -13,7 +13,7 @@ const Work = () => {
   const [ click ] = useContext(ContextClick)
   return (
       <div className="projectsCard-container page">
-          <h3 className='projects-card-title'>Projects</h3>
+          <h3 className={!click ? 'projects-card-title-dark' : 'projects-card-title'}>Projects</h3>
           {/* <SideInfo /> */}
             <div className="work-body-container">
               <div className={!click ? 'work-item-container-dark' : 'work-item-container'}>

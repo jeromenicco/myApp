@@ -67,6 +67,10 @@
   color: #61DAFB;
 }
 
+.about-item-container em {
+  font-weight: bold;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

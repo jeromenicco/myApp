@@ -16,7 +16,8 @@ const About = () => {
             {/* <Clock /> */}
             <p className={!click ? 'profile-card-title-dark' : 'profile-card-title'}>Profile</p>
             <SideInfo props={ ['JavaScript', 'React', 'Node', 'MySql', 'GitHub'] }/>
-            <SideInfo props={ ['']} />
+            <SideInfo props={ ['Bilingual', 'FR - EN']} />
+            <SideInfo props={ ['Creatif', 'Design']} />
             {/* <Ticker className="profile-ticker" speed={3} mode="chain">
             {() => (
                 <p className="text-ticker" style={{height: "3em"}}>JS++REACT++NODE++</p>

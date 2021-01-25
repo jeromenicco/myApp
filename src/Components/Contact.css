@@ -3,12 +3,23 @@
   font-style: italic;
   font-weight: lighter;
   font-size: 5rem;
+  color: black;
+}
+
+.contact-title-dark {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 5rem;
   color: lightgrey;
-  margin-left: 20px;
 }
 
 .contact-container {
-  margin-left: 1.5vw;
+  margin-left: 20px;
+  width: auto;
+}
+
+.contact-container-dark {
+  margin-left: 20px;
   width: auto;
 }
 
